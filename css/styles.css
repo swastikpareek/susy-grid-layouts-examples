@@ -1,5 +1,7 @@
 /** Including basic libraries **/
-/** Importing main files **/
+/**
+ * Importing main files
+ **/
 /**
  * Susy Configration schema
  */
@@ -13,28 +15,28 @@
  * Basic Color and Measurement declaration
  */
 /** Define colors here **/
-/* line 10, ../sass/modules/_variable.scss */
+/* line 10, ../sass/component/_variable.scss */
 .para-section {
   padding-top: 10px;
   padding-bottom: 10px; }
 
-/* line 16, ../sass/modules/_variable.scss */
+/* line 16, ../sass/component/_variable.scss */
 .para-row {
   margin-top: 10px;
   margin-bottom: 10px; }
 
-/* line 22, ../sass/modules/_variable.scss */
+/* line 22, ../sass/component/_variable.scss */
 .para-aside .para-row-inner-el {
   padding-left: 10px;
   padding-right: 10px; }
 
-/* line 28, ../sass/modules/_variable.scss */
+/* line 28, ../sass/component/_variable.scss */
 .para-section-adjustment, .para-aside {
   margin-left: -10px;
   margin-right: -10px; }
 
-/* line 34, ../sass/modules/_variable.scss */
-.para-aside .para-row-inner-el, .para-row {
+/* line 34, ../sass/component/_variable.scss */
+.para-aside .para-row-inner-el, body.guided .para-row {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -42,7 +44,7 @@
 /**
  * Class related to layouting
  */
-/* line 5, ../sass/modules/_layout.scss */
+/* line 5, ../sass/component/_layout.scss */
 .para {
   /** Layouting of main rows **/
   /* Layouts*/
@@ -52,109 +54,109 @@
   /** layout 25% - 25% - 25% -25% **/
   /** layout 25% - 75% **/
   /** Special layout for LR content **/ }
-  /* line 41, ../sass/modules/_variable.scss */
+  /* line 41, ../sass/component/_variable.scss */
   .para-section-adjustment:before, .para-section-adjustment:after {
     content: " ";
     display: table; }
-  /* line 47, ../sass/modules/_variable.scss */
+  /* line 47, ../sass/component/_variable.scss */
   .para-section-adjustment:after {
     clear: both; }
-  /* line 13, ../sass/modules/_layout.scss */
+  /* line 13, ../sass/component/_layout.scss */
   .para-section img {
     max-width: 100%;
     height: auto; }
-  /* line 22, ../sass/modules/_layout.scss */
+  /* line 22, ../sass/component/_layout.scss */
   .para-row-full-image img {
     width: 100%;
     height: 300px; }
-  /* line 41, ../sass/modules/_variable.scss */
+  /* line 41, ../sass/component/_variable.scss */
   .para-full-span:before, .para-full-span:after, .para-2-col:before, .para-2-col:after, .para-3-col:before, .para-3-col:after, .para-4-col:before, .para-4-col:after, .para-1-3-col:before, .para-1-3-col:after {
     content: " ";
     display: table; }
-  /* line 47, ../sass/modules/_variable.scss */
+  /* line 47, ../sass/component/_variable.scss */
   .para-full-span:after, .para-2-col:after, .para-3-col:after, .para-4-col:after, .para-1-3-col:after {
     clear: both; }
-  /* line 38, ../sass/modules/_layout.scss */
+  /* line 38, ../sass/component/_layout.scss */
   .para-full-span > .para-row {
     width: 97.91667%;
     float: left;
     margin-left: 1.04167%;
     margin-right: 1.04167%; }
-  /* line 44, ../sass/modules/_layout.scss */
+  /* line 44, ../sass/component/_layout.scss */
   .para-2-col > .para-row {
     width: 97.91667%;
     float: left;
     margin-left: 1.04167%;
     margin-right: 1.04167%; }
     @media screen and (min-width: 480px) {
-      /* line 44, ../sass/modules/_layout.scss */
+      /* line 44, ../sass/component/_layout.scss */
       .para-2-col > .para-row {
         width: 47.91667%;
         float: left;
         margin-left: 1.04167%;
         margin-right: 1.04167%; } }
-    /* line 49, ../sass/modules/_layout.scss */
+    /* line 49, ../sass/component/_layout.scss */
     .para-2-col > .para-row .image-2-3-col {
       max-width: 306.66px;
       margin: 0px auto; }
-  /* line 57, ../sass/modules/_layout.scss */
+  /* line 57, ../sass/component/_layout.scss */
   .para-3-col > .para-row {
     width: 97.91667%;
     float: left;
     margin-left: 1.04167%;
     margin-right: 1.04167%; }
     @media screen and (min-width: 480px) {
-      /* line 57, ../sass/modules/_layout.scss */
+      /* line 57, ../sass/component/_layout.scss */
       .para-3-col > .para-row {
         width: 31.25%;
         float: left;
         margin-left: 1.04167%;
         margin-right: 1.04167%; } }
-  /* line 66, ../sass/modules/_layout.scss */
+  /* line 66, ../sass/component/_layout.scss */
   .para-4-col > .para-row {
     width: 97.91667%;
     float: left;
     margin-left: 1.04167%;
     margin-right: 1.04167%; }
     @media screen and (min-width: 480px) {
-      /* line 66, ../sass/modules/_layout.scss */
+      /* line 66, ../sass/component/_layout.scss */
       .para-4-col > .para-row {
         width: 47.91667%;
         float: left;
         margin-left: 1.04167%;
         margin-right: 1.04167%; } }
     @media screen and (min-width: 960px) {
-      /* line 66, ../sass/modules/_layout.scss */
+      /* line 66, ../sass/component/_layout.scss */
       .para-4-col > .para-row {
         width: 22.91667%;
         float: left;
         margin-left: 1.04167%;
         margin-right: 1.04167%; } }
-  /* line 77, ../sass/modules/_layout.scss */
+  /* line 77, ../sass/component/_layout.scss */
   .para-1-3-col {
     /* Giving first child 25% */
     /* Giving first child 75% with right float */ }
-    /* line 79, ../sass/modules/_layout.scss */
+    /* line 79, ../sass/component/_layout.scss */
     .para-1-3-col > .para-row:first-child {
       width: 97.91667%;
       float: left;
       margin-left: 1.04167%;
       margin-right: 1.04167%; }
       @media screen and (min-width: 480px) {
-        /* line 79, ../sass/modules/_layout.scss */
+        /* line 79, ../sass/component/_layout.scss */
         .para-1-3-col > .para-row:first-child {
           width: 31.25%;
           float: left;
           margin-left: 1.04167%;
           margin-right: 1.04167%; } }
       @media screen and (min-width: 960px) {
-        /* line 79, ../sass/modules/_layout.scss */
+        /* line 79, ../sass/component/_layout.scss */
         .para-1-3-col > .para-row:first-child {
           width: 22.91667%;
           float: left;
           margin-left: 1.04167%;
           margin-right: 1.04167%; } }
-    /* line 89, ../sass/modules/_layout.scss */
+    /* line 89, ../sass/component/_layout.scss */
     .para-1-3-col > .para-row:last-child {
       width: 97.91667%;
       float: left;
@@ -162,42 +164,38 @@
       margin-right: 1.04167%;
       float: right; }
       @media screen and (min-width: 480px) {
-        /* line 89, ../sass/modules/_layout.scss */
+        /* line 89, ../sass/component/_layout.scss */
         .para-1-3-col > .para-row:last-child {
           width: 64.58333%;
           float: left;
           margin-left: 1.04167%;
           margin-right: 1.04167%; } }
       @media screen and (min-width: 960px) {
-        /* line 89, ../sass/modules/_layout.scss */
+        /* line 89, ../sass/component/_layout.scss */
         .para-1-3-col > .para-row:last-child {
           width: 72.91667%;
           float: left;
           margin-left: 1.04167%;
           margin-right: 1.04167%; } }
-  /* line 41, ../sass/modules/_variable.scss */
+  /* line 41, ../sass/component/_variable.scss */
   .para-aside:before, .para-aside:after {
     content: " ";
     display: table; }
-  /* line 47, ../sass/modules/_variable.scss */
+  /* line 47, ../sass/component/_variable.scss */
   .para-aside:after {
     clear: both; }
-  /* line 104, ../sass/modules/_layout.scss */
+  /* line 104, ../sass/component/_layout.scss */
   .para-aside .para-row-inner-el {
     width: 50%;
     float: left; }
 
 /**
- * Write paragraph related code
+ * Write paragraph related code - asthetics
  **/
 /**
  * Extra code for guidelines
  **/
-/* line 14, ../sass/modules/_extra.scss */
-body {
-  background-color: #fcfcfc; }
-
-/* line 18, ../sass/modules/_extra.scss */
+/* line 17, ../sass/component/_guidelines.scss */
 .container {
   max-width: 960px;
   border: 1px solid #efefef;
@@ -206,18 +204,83 @@ body {
   padding: 0 20px;
   font-size: 20px; }
 
-/* line 28, ../sass/modules/_extra.scss */
-.para-section {
-  border: 1px dotted #ccc;
-  background-color: #fff;
-  margin: 20px 0; }
-  /* line 32, ../sass/modules/_extra.scss */
-  .para-section:last-child {
-    border-bottom: 0; }
-/* line 36, ../sass/modules/_extra.scss */
-.para-row {
-  background-color: #fcfcfc;
-  border: 1px dashed #efefef; }
-  /* line 40, ../sass/modules/_extra.scss */
-  .para-row:hover {
-    background-color: #efefef; }
+/* line 25, ../sass/component/_guidelines.scss */
+.guide-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 100%;
+  background: red;
+  cursor: pointer;
+  z-index: 10;
+  width: 24px;
+  height: 24px; }
+
+/* line 37, ../sass/component/_guidelines.scss */
+body.guided {
+  background-color: #888; }
+  /* line 39, ../sass/component/_guidelines.scss */
+  body.guided .guide-btn {
+    background: green; }
+  /* line 43, ../sass/component/_guidelines.scss */
+  body.guided .para-section {
+    position: relative;
+    border: 1px dotted #ccc;
+    background-color: #fff;
+    margin: 20px 0; }
+    /* line 48, ../sass/component/_guidelines.scss */
+    body.guided .para-section:after {
+      font-size: 248px;
+      color: #fff;
+      text-align: center;
+      padding: 50px 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(176, 176, 176, 0.7);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0, 0, 0, 0.4); }
+    /* line 64, ../sass/component/_guidelines.scss */
+    body.guided .para-section:nth-child(1):after {
+      content: "1"; }
+    /* line 64, ../sass/component/_guidelines.scss */
+    body.guided .para-section:nth-child(2):after {
+      content: "2"; }
+    /* line 64, ../sass/component/_guidelines.scss */
+    body.guided .para-section:nth-child(3):after {
+      content: "3"; }
+    /* line 64, ../sass/component/_guidelines.scss */
+    body.guided .para-section:nth-child(4):after {
+      content: "4"; }
+    /* line 64, ../sass/component/_guidelines.scss */
+    body.guided .para-section:nth-child(5):after {
+      content: "5"; }
+    /* line 64, ../sass/component/_guidelines.scss */
+    body.guided .para-section:nth-child(6):after {
+      content: "6"; }
+    /* line 64, ../sass/component/_guidelines.scss */
+    body.guided .para-section:nth-child(7):after {
+      content: "7"; }
+    /* line 69, ../sass/component/_guidelines.scss */
+    body.guided .para-section:last-child {
+      border-bottom: 0; }
+    /* line 72, ../sass/component/_guidelines.scss */
+    body.guided .para-section:hover {
+      cursor: pointer; }
+      /* line 74, ../sass/component/_guidelines.scss */
+      body.guided .para-section:hover:after {
+        opacity: 1; }
+  /* line 80, ../sass/component/_guidelines.scss */
+  body.guided .para-row {
+    background-color: #fcfcfc;
+    border: 1px dashed #efefef; }
+    /* line 84, ../sass/component/_guidelines.scss */
+    body.guided .para-row:hover {
+      background-color: #efefef; }
+
+/**
+ * Importing section relatedfiles
+ **/
+/* No files to import found in sections/* */

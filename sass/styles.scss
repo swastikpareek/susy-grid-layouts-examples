@@ -1,10 +1,17 @@
 /** Including basic libraries **/
-@import "susy";
-@import "breakpoint";
+@import 'susy';
+@import 'breakpoint';
 
-/** Importing main files **/
-@import "modules/conf";
-@import "modules/variable";
-@import "modules/layout";
-@import "modules/paragraph";
-@import "modules/extra";
+/**
+ * Importing main files
+ **/
+@import 'component/conf';
+@import 'component/variable';
+@import 'component/layout';
+@import 'component/paragraph';
+@import 'component/guidelines';
+
+/**
+ * Importing section relatedfiles
+ **/
+ @import 'sections/*';

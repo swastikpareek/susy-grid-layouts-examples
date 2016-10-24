@@ -1,0 +1,90 @@
+/**
+ * Extra code for guidelines
+ **/
+
+// Variables related to guidelines
+
+// Colors
+$white: #fff;
+$grey : #ccc;
+$body-grey: #888;
+$light-grey : #efefef;
+$grey-tint: rgba(176,176,176,0.7);
+$milky : #fcfcfc;
+$black: #000;
+
+// Container Emulation of actual website;
+.container {
+    max-width: 960px;
+    border: 1px solid $light-grey;
+    background-color: $white;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 20px;
+}
+.guide-btn{
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 100%;
+  background: red;
+  cursor: pointer;
+  z-index: 10;
+  width: 24px;
+  height: 24px;
+}
+body{
+  &.guided{
+    background-color: $body-grey;
+    .guide-btn{
+      background: green;
+    }
+    .para{
+      &-section{
+        position: relative;
+        border: 1px dotted $grey;
+        background-color: $white;
+        margin: 20px 0;
+        &:after{
+          font-size: 248px;
+          color: $white;
+          text-align: center;
+          padding: 50px 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: $grey-tint;
+          opacity: 0;
+          transition: all 0.3s cubic-bezier(0, 0, 0, 0.4);
+        }
+        @for $i from 1 through 7{
+          &:nth-child(#{$i}){
+            &:after{
+              content: '#{$i}';
+            }
+          }
+        }
+        &:last-child{
+          border-bottom: 0;
+        }
+        &:hover{
+          cursor: pointer;
+          &:after{
+            opacity: 1;
+
+          }
+        }
+      }
+      &-row{
+        background-color: $milky;
+        border: 1px dashed $light-grey;
+        @extend %borderBox;
+        &:hover{
+          background-color: $light-grey;
+        }
+      }
+    }
+  }
+}
