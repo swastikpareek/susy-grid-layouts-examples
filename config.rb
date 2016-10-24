@@ -1,0 +1,42 @@
+require 'compass/import-once/activate'
+# Require any additional compass plugins here.
+
+# Default to development if environment is not set.
+saved = environment
+if (environment.nil?)
+    environment = :development
+    else
+    environment = saved
+end
+
+# Location of the theme's resources.
+css_dir = "css"
+sass_dir = "sass"
+images_dir = "images"
+generated_images_dir = images_dir + "/generated"
+
+# Require any additional compass plugins installed on your system.
+require 'compass-normalize'
+require 'rgbapng'
+require 'toolkit'
+require 'breakpoint'
+require 'singularitygs'
+require 'susy'
+require 'sass-globbing'
+
+
+##
+## You probably don't need to edit anything below this.
+##
+
+# You can select your preferred output style here (:expanded, :nested, :compact
+# or :compressed).
+output_style = (environment == :production) ? :expanded : :nested
+
+# To enable relative paths to assets via compass helper functions. Since Drupal
+# themes can be installed in multiple locations, we don't need to worry about
+# the absolute path to the theme from the server omega.
+relative_assets = true
+
+# Output source maps in development mode.
+sass_options = (environment == :production) ? {} : {:sourcemap => false}

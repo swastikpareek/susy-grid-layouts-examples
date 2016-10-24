@@ -1,0 +1,25 @@
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: split,
+  container: 960px,
+  columns: 12,
+  gutters: 20/60,
+);
+
+
+// $mobile : screen;
+// $tablet : min-width 480px;
+// $desktop : min-width 960px;
+
+$mobile-d: 479px;
+$tab-d: 959px;
+$mobile: 480px;
+$tab: 960px;
+
+$mobileUp : 'screen and (min-width: #{$mobile})';
+$tabUp : 'screen and (min-width: #{$tab})';
+
+$mobileDown : 'screen and (max-width: #{$mobile-d})';
+$tabUp : 'screen and (max-width: #{$tab-d})';
