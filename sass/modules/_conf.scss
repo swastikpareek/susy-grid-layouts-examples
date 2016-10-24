@@ -1,3 +1,8 @@
+
+/**
+ * Susy Configration schema
+ */
+
 $susy: (
   flow: ltr,
   math: fluid,
@@ -9,17 +14,24 @@ $susy: (
 );
 
 
-// $mobile : screen;
-// $tablet : min-width 480px;
-// $desktop : min-width 960px;
+/**
+ * Breakpoints declarations
+ */
 
 $mobile-d: 479px;
 $tab-d: 959px;
 $mobile: 480px;
 $tab: 960px;
 
+
+/**
+ * Media queries definitions
+ */
+
+// Mobile first approach - followed
 $mobileUp : 'screen and (min-width: #{$mobile})';
 $tabUp : 'screen and (min-width: #{$tab})';
 
+// Desktop first approach
 $mobileDown : 'screen and (max-width: #{$mobile-d})';
-$tabUp : 'screen and (max-width: #{$tab-d})';
+$tabDown : 'screen and (max-width: #{$tab-d})';

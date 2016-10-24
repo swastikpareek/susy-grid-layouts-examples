@@ -1,240 +1,295 @@
 <html>
-
-<head>
+  <head>
     <title>7 Section Emulation</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=0">
-</head>
+  </head>
 
 <body>
-    <!-- paragraph section one with 2 column layout -->
-    <div class="container">
-        <div class="para-section para-section-1 para-2-col">
+  <!-- Container for containing whole layout -->
+  <div class="container">
+    <!-- paragraph section 1 with 2 column layout -->
+    <div class="para-section para-section-1">
+      <div class="para-section-adjustment para-2-col">
+        <div class="para-full-span">
+          <div class="para-row">
             <h2 class="para-headline"> Headline text</h2>
-            <div class="para-section-1-row para-row  ">
-                <div class="para-row-inner para-aside ">
-                    <div class="para-row-inner-el">
-                        <img class="para-row-el" src="images/screen1.jpg">
-                    </div>
-                    <div class="para-row-inner-el">
-                        <p class="para-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text</p>
-                    </div>
-                </div>
-            </div>
-            <div class="para-section-1-row para-row  ">
-                <div class="para-row-inner para-aside ">
-                    <div class="para-row-inner-el">
-                        <img class="para-row-el" src="images/screen1.jpg">
-                    </div>
-                    <div class="para-row-inner-el">
-                        <p class="para-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <!-- Rows -->
+        <div class="para-section-1-row para-row">
+          <div class="para-row-inner para-aside">
+            <div class="para-row-inner-el">
+              <img class="para-row-el" src="images/thumb1.jpg">
+            </div>
+            <div class="para-row-inner-el">
+              <p class="para-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text</p>
+            </div>
+          </div>
+        </div>
+        <!-- Rows -->
+        <div class="para-section-1-row para-row">
+          <div class="para-row-inner">
+            <div class="para-row-inner-el">
+              <img class="para-row-el" src="images/bigthumb.jpg">
+            </div>
+            <div class="para-row-inner-el">
+              <p class="para-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- paragraph section two with 2 column layout giving image as 1/3rd width of it -->
-    <div class="container">
-        <div class="para-section para-section-2 para-2-col">
-            <div class="para-section-2-row para-row">
-                <div class="para-row-inner ">
-                    <div class="para-row-inner-image">
-                        <img src="images/screen2.png">
-                    </div>
-                    <p class="para-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text</p>
-                </div>
+    <!-- Para Section 1 ends -->
+
+    <!-- paragraph section 2 with 2 column layout giving image as 1/3rd width of it -->
+    <div class="para-section para-section-2">
+      <div class="para-section-adjustment para-2-col">
+        <div class="para-section-2-row para-row">
+          <div class="para-row-inner">
+            <div class="para-row-inner-image image-2-3-col">
+              <img src="images/thumb3.jpg">
             </div>
-            <div class="para-section-2-row para-row">
-                <div class="para-row-inner ">
-                    <div class="para-row-inner-image">
-                        <img src="images/screen1.jpg">
-                    </div>
-                    <p class="para-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text</p>
-                </div>
+            <div class="para-row-inner-el">
+              <p class="para-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text</p>
             </div>
+          </div>
         </div>
+        <div class="para-section-2-row para-row">
+          <div class="para-row-inner ">
+            <div class="para-row-inner-image image-2-3-col">
+              <img src="images/thumb4.jpg">
+            </div>
+            <div class="para-row-inner-el">
+              <p class="para-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- paragraph section three with 3 column layout giving image as 1/3rd width of it -->
-    <div class="container">
-        <div class="para-section para-section-3 para-3-col">
-            <div class="para-section-3-row para-row  ">
-                <img class="para-row-el" src="images/screen1.jpg">
-            </div>
-            <div class="para-section-3-row para-row">
-                <img src="images/screen2.png">
-            </div>
-            <div class="para-section-3-row para-row">
-                <img src="images/screen1.jpg">
-            </div>
+    <!-- Para Section 2 ends -->
+
+    <!-- paragraph section 3 with 3 column layout giving image as 1/3rd width of it -->
+    <div class="para-section para-section-3">
+      <div class="para-section-adjustment">
+        <div class="para-3-col para-section-3-header">
+          <div class="para-section-3-row para-row">
+            <img class="para-row-el" src="images/thumb1.jpg">
+          </div>
+          <div class="para-section-3-row para-row">
+            <img src="images/thumb3.jpg">
+          </div>
+          <div class="para-section-3-row para-row">
+            <img src="images/thumb4.jpg">
+          </div>
         </div>
-        <h2 class="para-headline"> Headline text</h2>
-        <p class="para-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text Hello from the code! this is a heading text this is a heading text this is a heading text</p>
+        <div class="para-section-3-content">
+          <div class="para-section-3-row para-full-span">
+            <div class="para-row">
+              <h2 class="para-headline"> Headline text</h2>
+              <p class="para-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text Hello from the code! this is a heading text this is a heading text this is a heading text</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- paragraph section four with 4 column layout  -->
-    <div class="container">
-        <div class="para-section para-section-4 ">
-            <div class="para-section-4-row para-row para-row-full-image ">
-                <img src="images/screen1.jpg">
-            </div>
-            <div class="para-section-4-row para-1-3-col  ">
-                <div class="para-row">
-                    <img src="images/screen2.png">
-                </div>
-                <div class="para-row">
-                    <p class="para-row-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text Hello from the code! this is a heading text this is a heading text this is a heading text</p>
-                </div>
-            </div>
-            <div class="para-section-4-row para-1-3-col  ">
-                <div class="para-row">
-                    <img src="images/screen2.png">
-                </div>
-                <div class="para-row">
-                    <h2 class="para-row-headline"> Headline text</h2>
-                    <p class="para-row-maintext "> Hello from the code! this is a heading text this is a heading text this is a heading text Hello from the code! this is a heading text this is a heading text this is a heading text</p>
-                    <h4 class="para-row-subheadline "> Headline text</h4>
-                    <p class="para-row-maintext "> Hello from the code! this is a heading text this is a heading text this is a heading text Hello from the code! this is a heading text this is a heading text this is a heading text</p>
-                </div>
-            </div>
-            <div class="para-section-4-row para-1-3-col  ">
-                <div class="para-row">
-                    <img src="images/screen2.png">
-                </div>
-                <div class="para-row">
-                    <h2 class="para-row-headline "> Headline text two</h2>
-                    <p class="para-row-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text Hello from the code! this is a heading text this is a heading text this is a heading text</p>
-                    <h4 class="para-row-subheadline"> Headline text</h4>
-                    <p class="para-row-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text Hello from the code! this is a heading text this is a heading text this is a heading text</p>
-                </div>
-            </div>
+    <!-- Para Section 3 ends -->
+
+    <!-- paragraph section 4 with 4 column layout  -->
+    <div class="para-section para-section-4">
+      <div class="para-section-adjustment">
+        <!-- Full span Header -->
+        <div class="para-section-4-row para-full-span para-row-full-image para-section-4-header">
+          <div class="para-row">
+            <!-- Markup for video/image/slider -->
+            <img src="images/banner1.jpg">
+          </div>
         </div>
-        <div class="para-section para-section-4-col para-4-col">
-            <div class="para-section-4-row para-row">
-                <div class="para-row-inner ">
-                    <div class="para-row-inner-image">
-                        <img src="images/screen2.png">
-                    </div>
-                    <p class="para-maintext"> Hello from the code! this is a heading text this is a </p>
-                </div>
+         <!-- 1:3 content  -->
+        <div class="para-section-4-row para-section-4-content">
+          <div class="para-1-3-col para-section-4-content-row">
+            <div class="para-row">
+              <img src="images/thumb2.jpg">
             </div>
-            <div class="para-section-4-row para-row">
-                <div class="para-row-inner ">
-                    <div class="para-row-inner-image">
-                        <img src="images/screen1.jpg">
-                    </div>
-                    <p class="para-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text</p>
-                </div>
+            <div class="para-row">
+              <p class="para-row-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text Hello from the code! this is a heading text this is a heading text this is a heading text</p>
             </div>
-            <div class="para-section-4-row para-row">
-                <div class="para-row-inner ">
-                    <div class="para-row-inner-image">
-                        <img src="images/screen1.jpg">
-                    </div>
-                    <p class="para-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text</p>
-                </div>
+          </div>
+          <div class="para-1-3-col para-section-4-content-row">
+            <div class="para-row">
+                <img src="images/thumb3.jpg">
             </div>
-            <div class="para-section-4-row para-row">
-                <div class="para-row-inner ">
-                    <div class="para-row-inner-image">
-                        <img src="images/screen1.jpg">
-                    </div>
-                    <p class="para-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text</p>
-                </div>
+            <div class="para-row">
+                <h2 class="para-row-headline"> Headline text</h2>
+                <p class="para-row-maintext "> Hello from the code! this is a heading text this is a heading text this is a heading text Hello from the code! this is a heading text this is a heading text this is a heading text</p>
+                <h4 class="para-row-subheadline "> Headline text</h4>
+                <p class="para-row-maintext "> Hello from the code! this is a heading text this is a heading text this is a heading text Hello from the code! this is a heading text this is a heading text this is a heading text</p>
             </div>
+          </div>
+          <div class="para-1-3-col para-section-4-content-row">
+            <div class="para-row">
+              <img src="images/thumb4.jpg">
+            </div>
+            <div class="para-row">
+              <h2 class="para-row-headline "> Headline text two</h2>
+              <p class="para-row-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text Hello from the code! this is a heading text this is a heading text this is a heading text</p>
+              <h4 class="para-row-subheadline"> Headline text</h4>
+              <p class="para-row-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text Hello from the code! this is a heading text this is a heading text this is a heading text</p>
+            </div>
+          </div>
         </div>
+        <!-- 4 col Footer -->
+        <div class="para-section-4-row para-section-4-footer para-4-col">
+          <div class="para-section-4-footer-row para-row">
+            <div class="para-row-inner">
+              <div class="para-row-inner-el">
+                <img class="para-row-el" src="images/thumb4.jpg">
+              </div>
+              <div class="para-row-inner-el">
+                <p class="para-maintext"> Hello from the code! this is a heading text this is a </p>
+              </div>
+            </div>
+          </div>
+          <div class="para-section-4-footer-row para-row">
+            <div class="para-row-inner">
+              <div class="para-row-inner-el">
+                <img class="para-row-el" src="images/thumb3.jpg">
+              </div>
+              <div class="para-row-inner-el">
+                <p class="para-maintext"> Hello from the code! this is a heading text this is a </p>
+              </div>
+            </div>
+          </div>
+          <div class="para-section-4-footer-row para-row">
+            <div class="para-row-inner">
+              <div class="para-row-inner-el">
+                <img class="para-row-el" src="images/thumb2.jpg">
+              </div>
+              <div class="para-row-inner-el">
+                <p class="para-maintext"> Hello from the code! this is a heading text this is a </p>
+              </div>
+            </div>
+          </div>
+          <div class="para-section-4-footer-row para-row">
+            <div class="para-row-inner">
+              <div class="para-row-inner-el">
+                <img class="para-row-el" src="images/thumb1.jpg">
+              </div>
+              <div class="para-row-inner-el">
+                <p class="para-maintext"> Hello from the code! this is a heading text this is a </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- paragraph section five with 2 column layout  -->
-    <div class="container">
-        <div class="para-section para-section-5 ">
-            <div class="para-section-5-row para-row para-row-full-image ">
-                <img src="images/screen1.jpg">
-            </div>
-            <div class="para-section para-section-5-col para-2-col">
-                <div class="para-section-5-row para-row  ">
-                    <div class="para-row-inner para-aside ">
-                        <div class="para-row-inner-el">
-                            <img class="para-row-el" src="images/screen1.jpg">
-                        </div>
-                        <div class="para-row-inner-el">
-                            <h4 class="para-headline para-section-5-text"> Headline text</h4>
-                            <p class="para-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="para-section-5-row para-row  ">
-                    <div class="para-row-inner para-aside ">
-                        <div class="para-row-inner-el">
-                            <img class="para-row-el" src="images/screen1.jpg">
-                        </div>
-                        <div class="para-row-inner-el">
-                            <h4 class="para-headline para-section-5-text"> Headline text</h4>
-                            <p class="para-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="para-section-5-row para-row  ">
-                    <div class="para-row-inner para-aside ">
-                        <div class="para-row-inner-el">
-                            <img class="para-row-el" src="images/screen1.jpg">
-                        </div>
-                        <div class="para-row-inner-el">
-                            <h4 class="para-headline para-section-5-text"> Headline text</h4>
-                            <p class="para-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="para-section-5-row para-row  ">
-                    <div class="para-row-inner para-aside ">
-                        <div class="para-row-inner-el">
-                            <img class="para-row-el" src="images/screen1.jpg">
-                        </div>
-                        <div class="para-row-inner-el">
-                            <h4 class="para-headline para-section-5-text"> Headline text</h4>
-                            <p class="para-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Para Section 4 ends -->
+
+    <!-- paragraph section 5 with 2 column layout  -->
+    <div class="para-section para-section-5 ">
+      <div class="para-section-adjustment">
+        <!-- Full span Header -->
+        <div class="para-section-5-row para-full-span para-row-full-image para-section-5-header">
+          <div class="para-row">
+            <!-- Markup for Image -->
+            <img src="images/banner2.jpg">
+          </div>
         </div>
-    </div>
-    <!-- paragraph section six with 3 column layout giving image as 1/3rd width of it -->
-    <div class="container">
-        <div class="para-section para-section-6 ">
-            <div class="para-section para-section-4-col para-4-col">
-                <div class="para-section-6-row para-row">
-                    <div class="para-row-inner ">
-                        <div class="para-row-inner-image">
-                            <img src="images/screen2.png">
-                        </div>
-                        <p class="para-maintext"> Hello from the code! this is a heading text this is a </p>
-                    </div>
-                </div>
-                <div class="para-section-6-row para-row">
-                    <div class="para-row-inner ">
-                        <div class="para-row-inner-image">
-                            <img src="images/screen1.jpg">
-                        </div>
-                        <p class="para-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text</p>
-                    </div>
-                </div>
-                <div class="para-section-6-row para-row">
-                    <div class="para-row-inner ">
-                        <div class="para-row-inner-image">
-                            <img src="images/screen1.jpg">
-                        </div>
-                        <p class="para-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text</p>
-                    </div>
-                </div>
-                <div class="para-section-6-row para-row">
-                    <div class="para-row-inner ">
-                        <div class="para-row-inner-image">
-                            <img src="images/screen1.jpg">
-                        </div>
-                        <p class="para-maintext"> Hello from the code! this is a heading text this is a heading text this is a heading text</p>
-                    </div>
-                </div>
+        <!-- 2 aside col Footer -->
+        <div class="para-section-5-row para-section-5-content para-2-col">
+          <div class="para-section-5-content-row para-row">
+            <div class="para-row-inner para-aside">
+              <div class="para-row-inner-el">
+                <img class="para-row-el" src="images/thumb2.jpg">
+              </div>
+              <div class="para-row-inner-el">
+                <p class="para-maintext"> Hello from the code! this is a heading text this is a </p>
+              </div>
             </div>
+          </div>
+          <div class="para-section-5-content-row para-row">
+            <div class="para-row-inner para-aside">
+              <div class="para-row-inner-el">
+                <img class="para-row-el" src="images/thumb2.jpg">
+              </div>
+              <div class="para-row-inner-el">
+                <p class="para-maintext"> Hello from the code! this is a heading text this is a </p>
+              </div>
+            </div>
+          </div>
+          <div class="para-section-5-content-row para-row">
+            <div class="para-row-inner para-aside">
+              <div class="para-row-inner-el">
+                <img class="para-row-el" src="images/thumb2.jpg">
+              </div>
+              <div class="para-row-inner-el">
+                <p class="para-maintext"> Hello from the code! this is a heading text this is a </p>
+              </div>
+            </div>
+          </div>
+          <div class="para-section-5-content-row para-row">
+            <div class="para-row-inner para-aside">
+              <div class="para-row-inner-el">
+                <img class="para-row-el" src="images/thumb2.jpg">
+              </div>
+              <div class="para-row-inner-el">
+                <p class="para-maintext"> Hello from the code! this is a heading text this is a </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+    <!-- Para Section 5 ends -->
+
+    <!-- paragraph section 6 with 4 column layout giving image as 1/4rd width of it -->
+    <div class="para-section para-section-6">
+      <div class="para-section-adjustment para-4-col">
+        <div class="para-section-6-row para-row">
+          <div class="para-row-inner">
+            <div class="para-row-inner-el">
+              <img class="para-row-el" src="images/thumb2.jpg">
+            </div>
+            <div class="para-row-inner-el">
+              <p class="para-maintext"> Hello from the code! this is a heading text this is a </p>
+            </div>
+          </div>
+        </div>
+        <div class="para-section-6-row para-row">
+          <div class="para-row-inner">
+            <div class="para-row-inner-el">
+              <img class="para-row-el" src="images/thumb2.jpg">
+            </div>
+            <div class="para-row-inner-el">
+              <p class="para-maintext"> Hello from the code! this is a heading text this is a </p>
+            </div>
+          </div>
+        </div>
+        <div class="para-section-6-row para-row">
+          <div class="para-row-inner">
+            <div class="para-row-inner-el">
+              <img class="para-row-el" src="images/thumb2.jpg">
+            </div>
+            <div class="para-row-inner-el">
+              <p class="para-maintext"> Hello from the code! this is a heading text this is a </p>
+            </div>
+          </div>
+        </div>
+        <div class="para-section-6-row para-row">
+          <div class="para-row-inner">
+            <div class="para-row-inner-el">
+              <img class="para-row-el" src="images/thumb2.jpg">
+            </div>
+            <div class="para-row-inner-el">
+              <p class="para-maintext"> Hello from the code! this is a heading text this is a </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Para Section 6 ends -->
+  </div>
+  <!-- Container Ends -->
 </body>
 
 </html>
